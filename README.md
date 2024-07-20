@@ -21,7 +21,7 @@ Example usage:
 
 ```
 yarn
-yarn start --inputDir ~/takeout --outputDir ~/output --errorDir ~/error
+npm run start -- --inputDir ~/takeout --outputDir ~/output --errorDir ~/error
 ```
 
 
