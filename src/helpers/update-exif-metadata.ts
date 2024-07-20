@@ -14,6 +14,7 @@ export async function updateExifMetadata(fileInfo: MediaFileInfo, timeTaken: str
   try {
     await exiftool.write(fileInfo.outputFilePath, {
       DateTimeOriginal: timeTaken,
+      
     });
   
     await unlink(`${fileInfo.outputFilePath}_original`); // exiftool will rename the old file to {filename}_original, we can delete that
